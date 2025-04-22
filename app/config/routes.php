@@ -152,7 +152,7 @@ return [
     ],
     "/usuario/create" => [
         "controller" => "App\Controllers\UsuarioController",
-        "action" => "create"
+        "action" => "createUsuario"
     ],
     "/usuario/view/(\d+)" => [
         "controller" => "App\Controllers\UsuarioController",

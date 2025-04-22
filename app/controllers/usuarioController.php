@@ -44,17 +44,18 @@ class UsuarioController extends BaseController
         $this->render('usuario/newUsuario.php', $data);
     }
 
-    public function create()
+    public function createUsuario()
     {
-        if (isset($_POST['txtNombre']) && isset($_POST['txtEmail']) && isset($_POST['txtContrasena']) && isset($_POST['txtIdRol'])) {
+        if (isset($_POST['txtNombre']) && isset($_POST['txtEmail']) && isset($_POST['txtContrasenia']) && isset($_POST['txtIdRol'])) {
             $nombre = $_POST['txtNombre'] ?? null;
             $email = $_POST['txtEmail'] ?? null;
-            $contrasena = password_hash($_POST['txtContrasena'], PASSWORD_DEFAULT); // Hash de la contraseña
+            $contrasenia = password_hash($_POST['txtContrasenia'], PASSWORD_DEFAULT); // Hash de la contraseña
             $idRol = $_POST['txtIdRol'] ?? null;
 
             $usuarioObj = new UsuarioModel();
-            $usuarioObj->saveUsuario($nombre, $email, $contrasena, $idRol);
-            $this->redirectTo("usuario/view");
+            $usuarioObj->saveUsuario($nombre, $email, $contrasenia, $idRol);
+            print_r($usuarioObj);
+            // $this->redirectTo("usuario/view");
         }
     }
 
