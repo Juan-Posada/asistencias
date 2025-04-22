@@ -1,3 +1,122 @@
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.data-container {
+    background-color: rgb(228, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 10px;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 20px 40px 0px;
+    transition: 0.3s;
+}
+
+div.record {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: .2rem 0;
+    margin-top: 10px;
+    padding: 30px 15px;
+    height: 60px;
+    border: 1px solid #00000051;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #D9D9D9;
+    transition: all 0.3s ease;
+}
+
+div.info {
+    height: 75%;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 1em;
+}
+
+.navegate-group {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    transition: 0.3s;
+    gap: 70%;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    transition: 0.2s ease-in;
+}
+
+.create button{
+    background-color: #30A900;
+    border-radius: 10px;
+    height: 40px;
+    width: 85px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.3);
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+}
+
+button.consultar{
+    background-color: #0090A4;
+}
+
+button.editar{
+    background-color: #37AC0D;
+}
+
+button.eliminar{
+    background-color: #EB4444;
+}
+
+.buttons button {
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    img{
+    scale: .7;
+    }
+}
+
+.buttons a{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+}
+
+.buttons button:hover {
+    background-color: #000000af;
+    transform: scale(1.1);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
 div.container{
     display: flex;
     width: 100%;
@@ -96,35 +215,6 @@ div.container{
     flex-grow: 1;
 }
 
-.data-container {
-    border: 1px solid #a5bed8;
-    border-radius: 8px;
-    background-color: #ececec;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-div.info{
-    max-height: 320px;
-    overflow-y: auto;
-    padding: 0.5em 1em;
-}
-
-div.record {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2.5rem;
-    padding: .2rem 0;
-    margin-top: 10px;
-    padding: 30px 15px;
-    height: 50px;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-}
 
 div.record-one{
     display: flex;
@@ -140,42 +230,6 @@ div.record-one{
     gap: .4rem;
     justify-content: center;
     align-items: center;
-}
-
-.buttons button {
-    cursor: pointer;
-    padding: 0.1rem .5rem;
-    background-color: #00af00;
-    color: #ffffff;
-    border: none;
-    padding: .8em;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-.buttons button:hover {
-    background-color: #3a56d4;
-    transform: translateY(-2px);
-}
-
-.create{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    transition: .2s all ease-in;
-}
-
-.create button{
-    background-color: #00af00;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 8px rgba(67, 97, 238, 0.3);
 }
 
 .create:hover{
@@ -251,27 +305,8 @@ span{
     transform: scale(1.1);
 }
 
-.back{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
 
-.navegate-group{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    border-bottom: 1px solid #a5bed8;
-    padding: 35px;
-    border-radius: 8px;
-    gap: 80px;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
-}
+
 
 /* Estilos para los iconos */
 i.fas {

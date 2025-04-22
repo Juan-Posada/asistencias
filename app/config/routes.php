@@ -8,7 +8,7 @@ return [
         "controller" => 'App\Controllers\UsuarioController',
         "action" => 'home'
     ],
-    
+
     // Regional
     "/regional/view" => [
         "controller" => "App\Controllers\RegionalController",
@@ -311,42 +311,75 @@ return [
         "action" => 'initLogin'
     ],
     // Rutas para tabla Coordinador
-        '/coordinador/index'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'index'
-        ],
-        '/coordinador/view'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'view'
-        ],
-        '/coordinador/new' => [
-            'controller' => 'App\Controllers\CoordinadorController',
-            'action' => 'newCoordinador'     // Nombre de la funcion 
-        ], 
-        '/coordinador/create'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'createCoordinador'
-        ],
-        '/coordinador/view/(\d+)'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'viewCoordinador'
-        ],
-        '/coordinador/edit/(\d+)'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'editCoordinador'
-        ],
-        '/coordinador/update'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'updateCoordinador'
-        ],
-        '/coordinador/delete/(\d+)'=> [
-            'controller' =>'App\Controllers\CoordinadorController',
-            'action' => 'deleteCoordinador' 
-        ],
-        "/coordinador/remove" => [
-            "controller" => "App\Controllers\CoordinadorController",
-            "action" => "removeCoordinador"
-        ],
+    '/coordinador/index' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'index'
+    ],
+    '/coordinador/view' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'view'
+    ],
+    '/coordinador/new' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'newCoordinador'     // Nombre de la funcion 
+    ],
+    '/coordinador/create' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'createCoordinador'
+    ],
+    '/coordinador/view/(\d+)' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'viewCoordinador'
+    ],
+    '/coordinador/edit/(\d+)' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'editCoordinador'
+    ],
+    '/coordinador/update' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'updateCoordinador'
+    ],
+    '/coordinador/delete/(\d+)' => [
+        'controller' => 'App\Controllers\CoordinadorController',
+        'action' => 'deleteCoordinador'
+    ],
+    "/coordinador/remove" => [
+        "controller" => "App\Controllers\CoordinadorController",
+        "action" => "removeCoordinador"
+    ],
+    // Rutas para tabla Horario
+    '/horario/view' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'view'
+    ],
+    '/horario/new' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'new'     // Nombre de la funcion 
+    ],
+    '/horario/create' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'create'
+    ],
+    '/horario/view/(\d+)' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'view'
+    ],
+    '/horario/edit/(\d+)' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'edit'
+    ],
+    '/horario/update' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'update'
+    ],
+    '/horario/delete/(\d+)' => [
+        'controller' => 'App\Controllers\HorarioController',
+        'action' => 'delete'
+    ],
+    "/horario/remove" => [
+        "controller" => "App\Controllers\HorarioController",
+        "action" => "remove"
+    ],
     '/login/logout' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'LogoutLogin'

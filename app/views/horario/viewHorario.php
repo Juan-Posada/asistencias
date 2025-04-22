@@ -1,14 +1,13 @@
 <div class="data-container">
-    
     <div class="info">
     <?php
-    if (empty($fichas)) {
-        echo '<br>No se encuentran fichas en la base de datos';
+    if (empty($horarios)) {
+        echo '<br>No se encuentran horarios en la base de datos';
     } else {
-        foreach ($fichas as $key => $value) {
+        foreach ($horarios as $key => $value) {
             echo
             "<div class='record'>
-                <span> ID: $value->id - Ficha: $value->ficha - ID Programa: $value->idPrograma</span>
+                <span> ID: $value->id - Hora Inicio: $value->horaInicio - Hora Fin: $value->horaFin - Día: $value->dia - ID Competencia: $value->idCompetencia</span>
                 <div class='buttons'>
                     <a href='/regional/view/$value->id'> 
                         <button class='consultar'>
@@ -36,7 +35,7 @@
             <a href="/login/init"><img src="/img/back.svg"></a>
         </div>
         <div class="create">
-            <a href="/ficha/new"><button>+</button></a>
+            <a href="/horario/new"><button>+</button></a>
         </div>
     </div>
 </div>
