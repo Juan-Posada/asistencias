@@ -27,6 +27,7 @@
                         <li><a href="/asistencia/view"><i class="fas fa-user"></i><span class="span">ASISTENCIA</span></a></li>
                         <li><a href="/horario/view"><i class="fas fa-user"></i><span class="span">HORARIO</span></a></li>
                         <li><a href="/programa/view"><i class="fas fa-book-open"></i><span class="span">PROGRAMA</span></a></li>
+                        <li><a href="/ficha/view"><i class="fas fa-book-open"></i><span class="span">FICHA</span></a></li>
                     </ul>
                 </nav>
             </div>

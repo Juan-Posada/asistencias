@@ -278,6 +278,34 @@ return [
         "controller" => "App\Controllers\AsistenciaController",
         "action" => "view"
     ],
+    "/asistencia/new" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "new"
+    ],
+    "/asistencia/create" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "create"
+    ],
+    "/asistencia/view/(\d+)" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "viewOne"
+    ],
+    "/asistencia/edit/(\d+)" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "edit"
+    ],
+    "/asistencia/update" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "update"
+    ],
+    "/asistencia/delete/(\d+)" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "delete"
+    ],
+    "/asistencia/remove" => [
+        "controller" => "App\Controllers\AsistenciaController",
+        "action" => "remove"
+    ],
     "/login/init" => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'
