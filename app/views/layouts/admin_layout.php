@@ -39,6 +39,10 @@
             <header class="header">
                 <div class="header-container">
                     <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar..." id="search-input">
+                    </div>
                     <h1> <?php echo $title ?> </h1>
                     <div class="header-icons">
                         <a href="#" class="icon-link"><i class="fas fa-user-circle"></i></a>
@@ -52,6 +56,15 @@
             </div>
         </main>
     </div>
+
+    <footer class="footer-large">
+        <div class="footer-container">
+            <span>ADSO 2873711 © Todos los derechos reservados</span>
+            <span class="footer-logo">
+                <i class="fas fa-user-graduate"></i> Sofia Plus
+            </span>
+        </div>
+    </footer>
 
     <!-- Script para cambiar entre tema oscuro y claro -->
     <script>

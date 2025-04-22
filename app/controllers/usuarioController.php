@@ -53,9 +53,9 @@ class UsuarioController extends BaseController
             $fkIdRol = $_POST['fkIdRol'] ?? null;
             $usuarioModel = new UsuarioModel(); // Cambiado de InstructorModel a UsuarioModel
             $usuarioModel->saveUsuario($nombre, $email, $password, $fkIdRol); // Cambiado de saveInstructor a saveUsuario
-            // $this->redirectTo("usuario/view");
+            $this->redirectTo("usuario/view");
             
-            echo "hOLA"; // Esto debería mostrarse si no hay redirección
+            // echo "hOLA"; // Esto debería mostrarse si no hay redirección
         } else {
             echo "Faltan datos en el formulario"; // Mensaje de error si faltan datos
         }

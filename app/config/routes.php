@@ -240,6 +240,39 @@ return [
         "controller" => "App\Controllers\CentroController",
         "action" => "remove"
     ],
+    // Rutas para Ficha
+    "/ficha/view" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "view"
+    ],
+    "/ficha/new" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "new"
+    ],
+    "/ficha/create" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "create"
+    ],
+    "/ficha/view/(\d+)" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "viewOne"
+    ],
+    "/ficha/edit/(\d+)" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "edit"
+    ],
+    "/ficha/update" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "update"
+    ],
+    "/ficha/delete/(\d+)" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "delete"
+    ],
+    "/ficha/remove" => [
+        "controller" => "App\Controllers\FichaController",
+        "action" => "remove"
+    ],
     //asistencia
     "/asistencia/view" => [
         "controller" => "App\Controllers\AsistenciaController",

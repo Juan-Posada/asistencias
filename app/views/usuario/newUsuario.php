@@ -23,12 +23,12 @@
             <select name="fkIdRol" id="fkIdRol" class="form-control" required>
                 <option value=""></option>
                 <?php
-                if (isset($rol) && is_array($rol)) {
-                    foreach ($rol as $rol) {
-                        echo "<option value='$rol->id'>$rol->nombre</option>";
+                    if (isset($roles) && count($roles) > 0) {
+                        foreach ($roles as $rol) {
+                            echo "<option value='$rol->id'>$rol->nombre</option>";
+                        }
                     }
-                }
-                ?>
+                    ?> 
             </select>
         </div>
         <div class="form-group">
