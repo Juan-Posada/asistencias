@@ -33,6 +33,7 @@
                         <li><a href="/administrador/view"><i class="fas fa-user-tie"></i><span class="span">ADMINISTRADOR</span></a></li>
                         <li><a href="/aprendiz/view"><i class="fas fa-user-tie"></i><span class="span">APRENDIZ</span></a></li>
                         <li><a href="/instructor/view"><i class="fas fa-user-tie"></i><span class="span">INSTRUCTOR</span></a></li>
+                        <li><a href="/ambiente/view"><i class="fas fa-user-tie"></i><span class="span">AMBIENTE</span></a></li>
                     </ul>
                 </nav>
             </div>

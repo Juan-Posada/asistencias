@@ -479,6 +479,39 @@ return [
         "action" => "remove"
     ],
 
+    // Rutas para Ambiente
+    "/ambiente/view" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "view"
+    ],
+    "/ambiente/new" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "newAmbiente"
+    ],
+    "/ambiente/create" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "createAmbiente"
+    ],
+    "/ambiente/view/(\d+)" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "viewAmbiente"
+    ],
+    "/ambiente/edit/(\d+)" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "editAmbiente"
+    ],
+    "/ambiente/update" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "updateAmbiente"
+    ],
+    "/ambiente/delete/(\d+)" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "deleteAmbiente"
+    ],
+    "/ambiente/remove" => [
+        "controller" => "App\Controllers\AmbienteController",
+        "action" => "remove"
+    ],
     // Rutas para Instructor
     "/instructor/view" => [
         "controller" => "App\Controllers\InstructorController",
@@ -512,7 +545,7 @@ return [
         "controller" => "App\Controllers\InstructorController",
         "action" => "remove"
     ],
-    
+
     '/login/init' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'

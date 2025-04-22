@@ -16,7 +16,7 @@ require_once '../app/controllers/HorarioController.php';
 require_once '../app/controllers/CompetenciaController.php';
 require_once '../app/controllers/AprendizController.php';
 require_once '../app/controllers/InstructorController.php';
-
+require_once '../app/controllers/AmbienteController.php';
 
 $url = $_SERVER['REQUEST_URI']; //Lo que se ingresa en la URL
 $routes = include_once '../app/config/routes.php';
