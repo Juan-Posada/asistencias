@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\AsistenciaModel;
+use App\Models\HorarioModel;
+use App\Models\AprendizModel;
 
 require_once 'baseController.php';
 require_once MAIN_APP_ROUTE . '../models/AsistenciaModel.php';
@@ -17,6 +19,7 @@ class AsistenciaController extends BaseController
 
     public function view()
     {
+
         $asistenciaObj = new AsistenciaModel();
         $asistencias = $asistenciaObj->getAll();
         $data = [
@@ -28,7 +31,13 @@ class AsistenciaController extends BaseController
 
     public function new()
     {
+        $horarioObj = new HorarioModel();
+        $aprendizObj = new AprendizModel();
+        $horarios = $horarioObj->getAll();
+        $aprendices = $aprendizObj->getAll();
         $data = [
+            "horarios" => $horarios,
+            "aprendices" => $aprendices,
             "title" => "Nueva Asistencia"
         ];
         $this->render('asistencia/newAsistencia.php', $data);
@@ -63,7 +72,13 @@ class AsistenciaController extends BaseController
     {
         $asistenciaObj = new AsistenciaModel();
         $asistencia = $asistenciaObj->getAsistencia($id);
+        $horarioObj = new HorarioModel();
+        $aprendizObj = new AprendizModel();
+        $horarios = $horarioObj->getAll();
+        $aprendices = $aprendizObj->getAll();
         $data = [
+            "horarios" => $horarios,
+            "aprendices" => $aprendices,
             "asistencia" => $asistencia,
             "title" => "Editar Asistencia"
         ];

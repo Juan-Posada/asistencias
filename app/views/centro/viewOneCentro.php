@@ -1,9 +1,5 @@
 <div class="data-container">
-    <div class="navegate-group">
-        <div class="back">
-            <a href="/centro/view"><img src="/img/back.svg"></a>
-        </div>
-    </div>
+    
     <div class="info">
     <?php
         if($centro && is_object($centro)){
@@ -16,5 +12,10 @@
             ";      
         }
     ?>
+    </div>
+    <div class="navegate-group">
+        <div class="back">
+            <a href="/centro/view"><img src="/img/back.svg"></a>
+        </div>
     </div>
 </div>

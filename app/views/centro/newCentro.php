@@ -1,9 +1,5 @@
 <div class="data-container">
-    <div class="navegate-group">
-        <div class="back">
-            <a href="/centro/view"><img src="/img/back.svg"></a>
-        </div>
-    </div>
+    
     <div class="info">
         <form action="/centro/create" method="post">
             <div class="form-group">
@@ -24,5 +20,10 @@
                 <button type="submit">Guardar</button>
             </div>
         </form>
+    </div>
+    <div class="navegate-group">
+        <div class="back">
+            <a href="/centro/view"><img src="/img/back.svg"></a>
+        </div>
     </div>
 </div>

@@ -1,9 +1,5 @@
 <div class="data-container">
-    <div class="navegate-group">
-        <div class="back">
-            <a href="/asistencia/view"><img src="/img/back.svg"></a>
-        </div>
-    </div>
+    
     <div class="info">
         <form action="/asistencia/update" method="post">
             <div class="form-group">
@@ -30,5 +26,10 @@
                 <button type="submit">Editar</button>
             </div>
         </form>
+    </div>
+    <div class="navegate-group">
+        <div class="back">
+            <a href="/asistencia/view"><img src="/img/back.svg"></a>
+        </div>
     </div>
 </div>

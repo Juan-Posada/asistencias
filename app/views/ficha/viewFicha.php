@@ -1,12 +1,5 @@
 <div class="data-container">
-    <div class="navegate-group">
-        <div class="back">
-            <a href="/login/init"><img src="/img/back.svg"></a>
-        </div>
-        <div class="create">
-            <a href="/ficha/new"><button>+</button></a>
-        </div>
-    </div>
+    
     <div class="info">
     <?php
     if (empty($fichas)) {
@@ -25,5 +18,13 @@
         }
     }
     ?>
+    </div>
+    <div class="navegate-group">
+        <div class="back">
+            <a href="/login/init"><img src="/img/back.svg"></a>
+        </div>
+        <div class="create">
+            <a href="/ficha/new"><button>+</button></a>
+        </div>
     </div>
 </div>

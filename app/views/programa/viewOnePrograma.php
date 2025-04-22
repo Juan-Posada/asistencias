@@ -1,9 +1,5 @@
 <div class="data-container">
-    <div class="navegate-group">
-        <div class="back">
-            <a href="/programa/view"><img src="/img/back.svg"></a>
-        </div>
-    </div>
+    
     <div class="info">
     <?php
         if($programa && is_object($programa)){
@@ -16,5 +12,10 @@
             ";      
         }
     ?>
+    </div>
+    <div class="navegate-group">
+        <div class="back">
+            <a href="/programa/view"><img src="/img/back.svg"></a>
+        </div>
     </div>
 </div>

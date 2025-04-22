@@ -310,6 +310,39 @@ return [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'
     ],
+    // Rutas para tabla Coordinador
+        '/coordinador/index'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'index'
+        ],
+        '/coordinador/view'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'view'
+        ],
+        '/coordinador/new' => [
+            'controller' => 'App\Controllers\CoordinadorController',
+            'action' => 'newCoordinador'     // Nombre de la funcion 
+        ], 
+        '/coordinador/create'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'createCoordinador'
+        ],
+        '/coordinador/view/(\d+)'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'viewCoordinador'
+        ],
+        '/coordinador/edit/(\d+)'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'editCoordinador'
+        ],
+        '/coordinador/update'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'updateCoordinador'
+        ],
+        '/coordinador/delete/(\d+)'=> [
+            'controller' =>'App\Controllers\CoordinadorController',
+            'action' => 'deleteCoordinador' 
+        ],
     '/login/logout' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'LogoutLogin'
