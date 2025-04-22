@@ -1,15 +1,13 @@
 <?php
 require_once '../app/config/global.php';
-require_once '../app/controllers/homeController.php';
-require_once '../app/controllers/regionalController.php';
-require_once '../app/controllers/rolController.php';
-require_once '../app/controllers/usuarioController.php';
+require_once '../app/controllers/RegionalController.php';
+require_once '../app/controllers/RolController.php';
+require_once '../app/controllers/UsuarioController.php';
 require_once '../app/controllers/AdministradorController.php';
-require_once '../app/controllers/centroController.php';
-require_once '../app/controllers/centroController.php';
-require_once '../app/controllers/asistenciaController.php';
-require_once '../app/controllers/loginController.php';
-require_once '../app/controllers/programaController.php';
+require_once '../app/controllers/CentroController.php';
+require_once '../app/controllers/AsistenciaController.php';
+require_once '../app/controllers/LoginController.php';
+require_once '../app/controllers/ProgramaController.php';
 require_once '../app/controllers/FichaController.php';
 require_once '../app/controllers/CoordinadorController.php';
 require_once '../app/controllers/HorarioController.php';
@@ -17,6 +15,7 @@ require_once '../app/controllers/CompetenciaController.php';
 require_once '../app/controllers/AprendizController.php';
 require_once '../app/controllers/InstructorController.php';
 require_once '../app/controllers/AmbienteController.php';
+require_once '../app/controllers/MainController.php';
 
 $url = $_SERVER['REQUEST_URI']; //Lo que se ingresa en la URL
 $routes = include_once '../app/config/routes.php';

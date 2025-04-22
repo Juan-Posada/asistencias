@@ -4,11 +4,11 @@
         if($horario && is_object($horario)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $horario->id</span>
-                    <span>Hora Inicio: $horario->horaInicio</span>
-                    <span>Hora Fin: $horario->horaFin</span>
-                    <span>Día: $horario->dia</span>
-                    <span>ID Competencia: $horario->idCompetencia</span>
+                    <span class='object-table'>ID: $horario->id</span>
+                    <span class='object-table'>Hora Inicio: $horario->horaInicio</span>
+                    <span class='object-table'>Hora Fin: $horario->horaFin</span>
+                    <span class='object-table'>Día: $horario->dia</span>
+                    <span class='object-table'>ID Competencia: $horario->idCompetencia</span>
                 </div>
             ";      
         }

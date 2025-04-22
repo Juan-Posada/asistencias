@@ -5,9 +5,9 @@
         if($programa && is_object($programa)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $programa->id</span>
-                    <span>Nombre: $programa->nombre</span>
-                    <span>Centro: $programa->nombreCentro</span>
+                    <span class='object-table'>ID: $programa->id</span>
+                    <span class='object-table'>Nombre: $programa->nombre</span>
+                    <span class='object-table'>Centro: $programa->nombreCentro</span>
                 </div>
             ";      
         }

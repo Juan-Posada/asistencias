@@ -545,7 +545,7 @@ return [
         "controller" => "App\Controllers\InstructorController",
         "action" => "remove"
     ],
-
+    //Login
     '/login/init' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'
@@ -553,5 +553,10 @@ return [
     '/login/logout' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'LogoutLogin'
+    ],
+    // Página Principal
+    "/main" => [
+        "controller" => "App\Controllers\MainController",
+        "action" => "view"
     ],
 ];

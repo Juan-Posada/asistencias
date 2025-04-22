@@ -1,15 +1,14 @@
 <div class="data-container">
-    
     <div class="info">
     <?php
         if($asistencia && is_object($asistencia)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $asistencia->id</span>
-                    <span>ID Horario: $asistencia->idHorario</span>
-                    <span>Fecha: $asistencia->fecha</span>
-                    <span>Cantidad de Horas: $asistencia->cantHoras</span>
-                    <span>ID Aprendiz: $asistencia->idAprendiz</span>
+                    <span class='object-table'>ID: $asistencia->id</span>
+                    <span class='object-table'>ID Horario: $asistencia->idHorario</span>
+                    <span class='object-table'>Fecha: $asistencia->fecha</span>
+                    <span class='object-table'>Cantidad de Horas: $asistencia->cantHoras</span>
+                    <span class='object-table'>ID Aprendiz: $asistencia->idAprendiz</span>
                 </div>
             ";      
         }

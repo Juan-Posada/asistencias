@@ -1,5 +1,33 @@
 /* --------------------------------------------------------------------------------------------------------------------- */
 
+div.record-one{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid #acaaaa;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    border-radius: 15px;
+    margin-top: 36px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+span.object-table{
+    background-color: #30A900;
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
 .data-container {
     background-color: rgb(228, 228, 228);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 10px;
@@ -30,6 +58,7 @@ div.record {
     margin-bottom: 5px;
     background-color: #D9D9D9;
     transition: all 0.3s ease;
+    width: 95%;
 }
 
 div.info {
@@ -41,6 +70,8 @@ div.info {
     flex-grow: 1; /* Permite que el contenedor de info ocupe el espacio disponible */
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 
@@ -238,14 +269,6 @@ div.container{
     overflow: hidden; /* Evita que el contenido cause scroll en la página */
 }
 
-
-div.record-one{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem;
-}
 
 .buttons {
     display: flex;

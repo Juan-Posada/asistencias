@@ -16,6 +16,32 @@ class UsuarioController extends BaseController
         parent::__construct();
     }
 
+    public function initLogin(){
+        if(isset($_POST['email']) && isset($_POST['password'])){
+            $user = trim($_POST['email']) ?? null;
+            $password = trim($_POST['password']) ?? null;
+                if($user != "" && $password != ""){
+                    // Se valida la existencia del usuario y constraseña en al BD
+                    $loginObj = new UsuarioModel();
+                    $resp = $loginObj->validarLogin($user, $password);
+                    if($resp){
+                        $this->redirectTo('/main');
+                    }else{
+                        $errors = "El usuario y/o contraseña incorrectos";
+                    }
+                } else {
+                    $errors = "El usuario y/o contraseña no pueden ser vacíos";
+                    
+                }
+                $data = [
+                    'errors' => $errors
+                ];
+                $this->render('login/login.php', $data);
+        } else {
+            $this->render('login/login.php');
+        }
+    }
+
     public function view()
     {
         $usuarioObj = new UsuarioModel();

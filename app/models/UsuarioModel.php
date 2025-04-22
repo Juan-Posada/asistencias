@@ -18,11 +18,12 @@ class UsuarioModel extends BaseModel
     public function saveUsuario($nombre, $email, $contrasena, $idRol)
     {
         try {
+            $hashedPassword = password_hash($contrasena, PASSWORD_DEFAULT); // Hash de la contraseña
             $sql = "INSERT INTO $this->table (nombre, email, contrasena, idRol) VALUES (:nombre, :email, :contrasena, :idRol)";
             $statement = $this->dbConnection->prepare($sql);
             $statement->bindParam(':nombre', $nombre, PDO::PARAM_STR);
             $statement->bindParam(':email', $email, PDO::PARAM_STR);
-            $statement->bindParam(':contrasena', $contrasena, PDO::PARAM_STR);
+            $statement->bindParam(':contrasena', $hashedPassword, PDO::PARAM_STR);
             $statement->bindParam(':idRol', $idRol, PDO::PARAM_INT);
             return $statement->execute();
         } catch (PDOException $ex) {
@@ -71,15 +72,12 @@ class UsuarioModel extends BaseModel
         }
     }
 
-    public function getAll(): array
-    {
-        return parent::getAll();
-    }
+    // public function getAll(): array
+    // {
+    //     return parent::getAll();
+    // }
     public function validarLogin($email, $password){ //Contraseña que llega del formulario
-        $sql = "SELECT u.*, r.nombre AS nombreRol
-        FROM usuario u
-        INNER JOIN  rol r ON u.idRol = r.id
-        WHERE u.email=:email";
+        $sql = "SELECT * FROM $this->table WHERE email=:email";
         $statement = $this->dbConnection->prepare($sql);
         $statement->bindParam(":email", $email);
         $statement->execute();
@@ -93,7 +91,7 @@ class UsuarioModel extends BaseModel
                 // La contraseña ingresada es correcta
                 $_SESSION["nombre"] = $resultSet[0]->nombre;
                 $_SESSION["email"] = $resultSet[0]->email;
-                $_SESSION["nombreRol"] = $resultSet[0]->nombreRol;
+                $_SESSION["idRol"] = $resultSet[0]->idRol;
                 $_SESSION["timeOut"] = time();
                 session_regenerate_id();
                 return true;

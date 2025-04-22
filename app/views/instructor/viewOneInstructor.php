@@ -4,9 +4,9 @@
         if($instructor && is_object($instructor)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $instructor->id</span>
-                    <span>Centro: $instructor->idCentro</span>
-                    <span>Usuario: $instructor->idUsuario</span>
+                    <span class='object-table'>ID: $instructor->id</span>
+                    <span class='object-table'>Centro: $instructor->idCentro</span>
+                    <span class='object-table'>Usuario: $instructor->idUsuario</span>
                 </div>
             ";      
         }

@@ -1,13 +1,12 @@
 <div class="data-container">
-    
     <div class="info">
     <?php
         if($ficha && is_object($ficha)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $ficha->id</span>
-                    <span>Ficha: $ficha->ficha</span>
-                    <span>ID Programa: $ficha->idPrograma</span>
+                    <span class='object-table'>ID: $ficha->id</span>
+                    <span class='object-table'>Ficha: $ficha->ficha</span>
+                    <span class='object-table'>ID Programa: $ficha->idPrograma</span>
                 </div>
             ";      
         }

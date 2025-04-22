@@ -5,8 +5,8 @@
         if($regional && is_object($regional)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $regional->id</span>
-                    <span>Nombre: $regional->nombre</span>
+                    <span class='object-table'>ID: $regional->id</span>
+                    <span class='object-table'>Nombre: $regional->nombre</span>
                 </div>
             ";      
         }

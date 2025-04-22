@@ -3,7 +3,6 @@ namespace App\Controllers;
 //Se inicia la sesion
 session_start();
 
-use ValueError;
 
 class BaseController{
     protected string $layout = "main_layout";
@@ -17,7 +16,7 @@ class BaseController{
             if ($tiempoSesion > INACTIVE_TIME*60) {
                 // Se destruye la session por inactividad
                 session_destroy();
-                header("Location: /login/login");
+                header("Location: /login/init");
             }else{
                 //Se actualiza el tiemp de sesión
                 $_SESSION["timeOut"] = time();

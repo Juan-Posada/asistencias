@@ -5,8 +5,8 @@
         if($rol && is_object($rol)){
             echo "
                 <div class='record-one'>
-                    <span>ID: $rol->id</span>
-                    <span>Nombre: $rol->nombre</span>
+                    <span class='object-table'>ID: $rol->id</span>
+                    <span class='object-table'>Nombre: $rol->nombre</span>
                 </div>
             ";      
         }
