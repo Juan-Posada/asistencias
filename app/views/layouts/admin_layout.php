@@ -34,7 +34,7 @@
                         <li><a href="/aprendiz/view"><i class="fas fa-user-graduate"></i><span class="span">APRENDIZ</span></a></li>
                         <li><a href="/instructor/view"><i class="fas fa-chalkboard-teacher"></i><span class="span">INSTRUCTOR</span></a></li>
                         <li><a href="/ambiente/view"><i class="fas fa-door-open"></i><span class="span">AMBIENTE</span></a></li>
-                        <li><a href="/login/logout"><i class="fas fa-home"></i><span class="span">CERRAR SESION</span></a></li>
+                        <li><a href="/login/logout"><i class="fas fa-right-from-bracket"></i><span class="span">CERRAR SESION</span></a></li>
                     </ul>
                 </nav>
             </div>
