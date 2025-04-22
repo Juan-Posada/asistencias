@@ -5,35 +5,35 @@
         </div>
     </div>
     <div class="info">
-        <form action="/usuario/createUsuario" method="post">
-            <div class="form-group">
-                <label for="">Nombre del Usuario:</label>
-                <input type="text" name="txtNombre" id="txtNombre" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="">Email del Usuario:</label>
-                <input type="text" name="txtEmail" id="txtEmail" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="">Contraseña:</label>
-                <input type="password" name="txtContrasenia" id="txtContrasenia" required class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="">Rol:</label>
-                <select name="idRol" id="rolUsuario" required class="form-control">
-                    <option value="">Seleccione un rol</option>
-                    <?php
-                    if (isset($roles) && count($roles) > 0) {
-                        foreach ($roles as $rol) {
-                            echo "<option value=\"{$rol->id}\">{$rol->nombre}</option>";
-                        }
+    <form action="/usuario/create" method="post">
+        <div class="form-group">
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Email:</label>
+            <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Contraseña:</label>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Rol:</label>
+            <select name="fkIdRol" id="fkIdRol" class="form-control" required>
+                <option value=""></option>
+                <?php
+                if (isset($rol) && is_array($rol)) {
+                    foreach ($rol as $rol) {
+                        echo "<option value='$rol->id'>$rol->nombre</option>";
                     }
-                    ?>
-                </select>
-            </div>
-            <div class="form-group">
-                <button type="submit">Guardar</button>
-            </div>
-        </form>
+                }
+                ?>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
     </div>
 </div>

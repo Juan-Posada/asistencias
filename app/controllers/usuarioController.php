@@ -46,16 +46,18 @@ class UsuarioController extends BaseController
 
     public function createUsuario()
     {
-        if (isset($_POST['txtNombre']) && isset($_POST['txtEmail']) && isset($_POST['txtContrasenia']) && isset($_POST['txtIdRol'])) {
-            $nombre = $_POST['txtNombre'] ?? null;
-            $email = $_POST['txtEmail'] ?? null;
-            $contrasenia = password_hash($_POST['txtContrasenia'], PASSWORD_DEFAULT); // Hash de la contraseña
-            $idRol = $_POST['txtIdRol'] ?? null;
-
-            $usuarioObj = new UsuarioModel();
-            $usuarioObj->saveUsuario($nombre, $email, $contrasenia, $idRol);
-            print_r($usuarioObj);
+        if (isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['fkIdRol'])) {
+            $nombre = $_POST['nombre'] ?? null;
+            $email = $_POST['email'] ?? null;
+            $password = $_POST['password'] ?? null;
+            $fkIdRol = $_POST['fkIdRol'] ?? null;
+            $usuarioModel = new UsuarioModel(); // Cambiado de InstructorModel a UsuarioModel
+            $usuarioModel->saveUsuario($nombre, $email, $password, $fkIdRol); // Cambiado de saveInstructor a saveUsuario
             // $this->redirectTo("usuario/view");
+            
+            echo "hOLA"; // Esto debería mostrarse si no hay redirección
+        } else {
+            echo "Faltan datos en el formulario"; // Mensaje de error si faltan datos
         }
     }
 
