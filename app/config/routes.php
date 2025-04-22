@@ -245,7 +245,7 @@ return [
         "controller" => "App\Controllers\AsistenciaController",
         "action" => "view"
     ],
-    "/login/login" => [
+    "/login/init" => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'
     ],

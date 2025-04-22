@@ -1,11 +1,11 @@
 <div class="data-container">
     <div class="navegate-group">
         <div class="back">
-            <a href="/programa/view"><img src="/img/back.svg"></a>
+            <a href="/centro/view"><img src="/img/back.svg"></a>
         </div>
     </div>
     <div class="info">
-        <form action="/programa/remove" method="post">
+        <form action="/centro/remove" method="post">
             <div class="form-group">
                 <label>ID del Centro: </label>
                 <input type="text" readonly value="<?php echo $centro->id ?>" name="txtId" class="form-control">
