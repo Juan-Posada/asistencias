@@ -8,19 +8,19 @@
         foreach ($asistencias as $key => $value) {
             echo
             "<div class='record'>
-                <span> ID: $value->id - ID Horario: $value->idHorario - Fecha: $value->fecha - Cantidad de Horas: $value->cantHoras - ID Aprendiz: $value->idAprendiz</span>
+                <span> <div class='id'>$value->id</div> ID Horario: $value->idHorario - Fecha: $value->fecha - Cantidad de Horas: $value->cantHoras - ID Aprendiz: $value->idAprendiz</span>
                 <div class='buttons'>
-                    <a href='/regional/view/$value->id'> 
+                    <a href='/asistencia/view/$value->id'> 
                         <button class='consultar'>
                             <img src='/img/consultar.png' alt='consultar'>
                         </button> 
                     </a> 
-                    <a href='/regional/edit/$value->id'> 
+                    <a href='/asistencia/edit/$value->id'> 
                         <button class='editar'>
                             <img src='/img/editar.png' alt='consultar'>
                         </button> 
                     </a> 
-                    <a href='/regional/delete/$value->id'> 
+                    <a href='/asistencia/delete/$value->id'> 
                         <button class='eliminar'>
                             <img src='/img/eliminar.png' alt='consultar'>
                         </button> 

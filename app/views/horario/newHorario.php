@@ -3,13 +3,21 @@
         <form action="/horario/create" method="post">
             <div class="form-group">
                 <label for="">Hora Inicio:</label>
-                <input type="time" name="horaInicio" class="form-control" required>
+                <input type="datetime-local" name="horaInicio" class="form-control" required>
                 
                 <label for="">Hora Fin:</label>
-                <input type="time" name="horaFin" class="form-control" required>
+                <input type="datetime-local" name="horaFin" class="form-control" required>
 
                 <label for="">Día:</label>
-                <input type="text" name="dia" class="form-control" required>
+                <select name="dia" id="" required>
+                    <option value="">Seleccione el día...</option>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miercoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sabado</option>
+                </select>
 
                 <label for="">Competencia:</label>
                 <select name="idCompetencia" id="" required>

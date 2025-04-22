@@ -4,7 +4,7 @@ require_once '../app/controllers/homeController.php';
 require_once '../app/controllers/regionalController.php';
 require_once '../app/controllers/rolController.php';
 require_once '../app/controllers/usuarioController.php';
-require_once '../app/controllers/administradorController.php';
+require_once '../app/controllers/AdministradorController.php';
 require_once '../app/controllers/centroController.php';
 require_once '../app/controllers/centroController.php';
 require_once '../app/controllers/asistenciaController.php';
@@ -13,6 +13,8 @@ require_once '../app/controllers/programaController.php';
 require_once '../app/controllers/FichaController.php';
 require_once '../app/controllers/CoordinadorController.php';
 require_once '../app/controllers/HorarioController.php';
+require_once '../app/controllers/CompetenciaController.php';
+require_once '../app/controllers/AprendizController.php';
 
 
 $url = $_SERVER['REQUEST_URI']; //Lo que se ingresa en la URL

@@ -6,7 +6,7 @@
 
     <h2>Inicio de sesión</h2>
 
-    <form action="/" method="post">
+    <form action="/login/init" method="post">
         <div class="form-group">
             <label for="correo">Correo:</label>
             <input type="email" id="correo" name="email" required>

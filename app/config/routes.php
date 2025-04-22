@@ -1,14 +1,9 @@
 <?php
 return [
-    "/" => [
-        "controller" => 'App\Controllers\LoginController',
-        "action" => 'initLogin'
-    ],
     "/usuario/home" => [
         "controller" => 'App\Controllers\UsuarioController',
         "action" => 'home'
     ],
-
     // Regional
     "/regional/view" => [
         "controller" => "App\Controllers\RegionalController",
@@ -362,7 +357,7 @@ return [
     ],
     '/horario/view/(\d+)' => [
         'controller' => 'App\Controllers\HorarioController',
-        'action' => 'view'
+        'action' => 'viewOne'
     ],
     '/horario/edit/(\d+)' => [
         'controller' => 'App\Controllers\HorarioController',
@@ -379,6 +374,113 @@ return [
     "/horario/remove" => [
         "controller" => "App\Controllers\HorarioController",
         "action" => "remove"
+    ],
+    // Rutas para tabla Competencia
+    '/competencia/view' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'view'
+    ],
+    '/competencia/new' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'new'     // Nombre de la funcion 
+    ],
+    '/competencia/create' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'create'
+    ],
+    '/competencia/view/(\d+)' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'viewOne'
+    ],
+    '/competencia/edit/(\d+)' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'edit'
+    ],
+    '/competencia/update' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'update'
+    ],
+    '/competencia/delete/(\d+)' => [
+        'controller' => 'App\Controllers\CompetenciaController',
+        'action' => 'delete'
+    ],
+    "/competencia/remove" => [
+        "controller" => "App\Controllers\CompetenciaController",
+        "action" => "remove"
+    ],
+    // Rutas para tabla administrador
+    '/administrador/index' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'index'
+    ],
+    '/administrador/view' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'view'
+    ],
+    '/administrador/new' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'newAdministrador'     // Nombre de la funcion 
+    ],
+    '/administrador/create' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'createAdministrador'
+    ],
+    '/administrador/view/(\d+)' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'viewAdministrador'
+    ],
+    '/administrador/edit/(\d+)' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'editAdministrador'
+    ],
+    '/administrador/update' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'updateAdministrador'
+    ],
+    '/administrador/delete/(\d+)' => [
+        'controller' => 'App\Controllers\administradorController',
+        'action' => 'deleteAdministrador'
+    ],
+    "/administrador/remove" => [
+        "controller" => "App\Controllers\administradorController",
+        "action" => "removeAdministrador"
+    ],
+    // Rutas para tabla aprendiz
+    '/aprendiz/view' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'view'
+    ],
+    '/aprendiz/new' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'new'     // Nombre de la funcion 
+    ],
+    '/aprendiz/create' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'create'
+    ],
+    '/aprendiz/view/(\d+)' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'viewOne'
+    ],
+    '/aprendiz/edit/(\d+)' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'edit'
+    ],
+    '/aprendiz/update' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'update'
+    ],
+    '/aprendiz/delete/(\d+)' => [
+        'controller' => 'App\Controllers\AprenizController',
+        'action' => 'delete'
+    ],
+    "/aprendiz/remove" => [
+        "controller" => "App\Controllers\AprenizController",
+        "action" => "remove"
+    ],
+    '/login/init' => [
+        "controller" => 'App\Controllers\LoginController',
+        "action" => 'initLogin'
     ],
     '/login/logout' => [
         "controller" => 'App\Controllers\LoginController',

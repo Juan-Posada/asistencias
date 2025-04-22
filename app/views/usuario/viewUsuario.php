@@ -8,19 +8,19 @@
         foreach ($usuarios as $key => $value) {
             echo
             "<div class='record'>
-                <span> ID: $value->id - $value->nombre</span>
+                <span> <div class='id'>$value->id</div> $value->nombre</span>
                 <div class='buttons'>
-                    <a href='/regional/view/$value->id'> 
+                    <a href='/usuario/view/$value->id'> 
                         <button class='consultar'>
                             <img src='/img/consultar.png' alt='consultar'>
                         </button> 
                     </a> 
-                    <a href='/regional/edit/$value->id'> 
+                    <a href='/usuario/edit/$value->id'> 
                         <button class='editar'>
                             <img src='/img/editar.png' alt='consultar'>
                         </button> 
                     </a> 
-                    <a href='/regional/delete/$value->id'> 
+                    <a href='/usuario/delete/$value->id'> 
                         <button class='eliminar'>
                             <img src='/img/eliminar.png' alt='consultar'>
                         </button> 

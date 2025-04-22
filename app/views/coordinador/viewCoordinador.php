@@ -7,19 +7,19 @@
                 foreach ($coordinadores as $key => $value) {
                     echo
                     "<div class='record'>
-                        <span> ID: $value->id - Centro: $value->idCentro - Usuario: $value->idUsuario</span>
+                        <span><div class='id'>$value->id</div> Centro: $value->idCentro - Usuario: $value->idUsuario</span>
                         <div class='buttons'>
-                            <a href='/regional/view/$value->id'> 
+                            <a href='/coordinador/view/$value->id'> 
                                 <button class='consultar'>
                                     <img src='/img/consultar.png' alt='consultar'>
                                 </button> 
                             </a> 
-                            <a href='/regional/edit/$value->id'> 
+                            <a href='/coordinador/edit/$value->id'> 
                                 <button class='editar'>
                                     <img src='/img/editar.png' alt='consultar'>
                                 </button> 
                             </a> 
-                            <a href='/regional/delete/$value->id'> 
+                            <a href='/coordinador/delete/$value->id'> 
                                 <button class='eliminar'>
                                     <img src='/img/eliminar.png' alt='consultar'>
                                 </button> 

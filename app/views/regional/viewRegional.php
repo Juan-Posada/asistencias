@@ -8,7 +8,7 @@
         foreach ($regionales as $key => $value) {
             echo
             "<div class='record'>
-                <span> ID: $value->id - $value->nombre</span>
+                <span> <div class='id'>$value->id</div> $value->nombre</span>
                 <div class='buttons'>
                     <a href='/regional/view/$value->id'> 
                         <button class='consultar'>

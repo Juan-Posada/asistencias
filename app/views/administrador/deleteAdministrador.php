@@ -1,10 +1,9 @@
 <div class="data-container">
     
-    </div>
     <div class="info">
         <form action="/administrador/remove" method="post">
             <div class="form-group">
-                <label>ID del Administrador:</label>
+                <label>ID del Administrador: </label>
                 <input type="text" readonly value="<?php echo $administrador->id ?>" name="txtId" class="form-control">
             </div>
             <div class="form-group">
@@ -16,4 +15,5 @@
         <div class="back">
             <a href="/administrador/view"><img src="/img/back.svg"></a>
         </div>
+    </div>
 </div>

@@ -29,6 +29,9 @@
                         <li><a href="/programa/view"><i class="fas fa-book-open"></i><span class="span">PROGRAMA</span></a></li>
                         <li><a href="/ficha/view"><i class="fas fa-book-open"></i><span class="span">FICHA</span></a></li>
                         <li><a href="/coordinador/view"><i class="fas fa-user-tie"></i><span class="span">COORDINADOR</span></a></li>
+                        <li><a href="/competencia/view"><i class="fas fa-user-tie"></i><span class="span">COMPETENCIA</span></a></li>
+                        <li><a href="/administrador/view"><i class="fas fa-user-tie"></i><span class="span">ADMINISTRADOR</span></a></li>
+                        <li><a href="/aprendiz/view"><i class="fas fa-user-tie"></i><span class="span">APRENDIZ</span></a></li>
                     </ul>
                 </nav>
             </div>
