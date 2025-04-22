@@ -21,7 +21,7 @@
                         if (isset($centros) && is_array($centros)) {
                             foreach ($centros as $centro) {
                                 $selected = ($coordinador->idCentro == $centro->idCentro) ? 'selected' : '';
-                                echo "<option value='".$centro->idCentro."' $selected>".$centro->nombre."</option>";
+                                echo "<option value='".$centro->id."' $selected>".$centro->nombre."</option>";
                             }
                         } else {
                             echo "ERROR: No se encontraron centros";
@@ -39,7 +39,7 @@
                         if (isset($usuarios) && is_array($usuarios)) {
                             foreach ($usuarios as $usuario) {
                                 $selected = ($coordinador->idUsuario == $usuario->idUsuario) ? 'selected' : '';
-                                echo "<option value='".$usuario->idUsuario."' $selected>".$usuario->nombre."</option>";
+                                echo "<option value='".$usuario->id."' $selected>".$usuario->nombre."</option>";
                             }
                         } else {
                             echo "ERROR: No se encontraron usuarios";

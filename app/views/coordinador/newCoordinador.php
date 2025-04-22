@@ -12,9 +12,9 @@
                 <select name="txtIdCentro" id="txtIdCentro" class="form-control" required>
                     <option value="">Selecciona un centro</option>
                     <?php
-                        if (isset($centros) && count($centros) > 0) {
+                        if (isset($centros) && is_array($centros)) {
                             foreach ($centros as $centro) {
-                                echo "<option value='".$centro->idCentro."'>".$centro->nombre."</option>";
+                                echo "<option value='".$centro->id."'>".$centro->nombre."</option>";
                             }
                         } else {
                             echo "ERROR: No se encontraron centros";
@@ -31,7 +31,7 @@
                     <?php
                         if (isset($usuarios) && count($usuarios) > 0) {
                             foreach ($usuarios as $usuario) {
-                                echo "<option value='".$usuario->idUsuario."'>".$usuario->nombre."</option>";
+                                echo "<option value='".$usuario->id."'>".$usuario->nombre."</option>";
                             }
                         } else {
                             echo "ERROR: No se encontraron usuarios";

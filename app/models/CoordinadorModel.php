@@ -67,7 +67,7 @@ class CoordinadorModel extends BaseModel {
         }
     }
 
-    public function deleteCoordinador($id) {
+    public function removeCoordinador($id) {
         try {
             $sql = "DELETE FROM $this->table WHERE id=:id";
             $statement = $this->dbConnection->prepare($sql);

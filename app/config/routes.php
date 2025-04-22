@@ -343,6 +343,10 @@ return [
             'controller' =>'App\Controllers\CoordinadorController',
             'action' => 'deleteCoordinador' 
         ],
+        "/coordinador/remove" => [
+            "controller" => "App\Controllers\CoordinadorController",
+            "action" => "removeCoordinador"
+        ],
     '/login/logout' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'LogoutLogin'

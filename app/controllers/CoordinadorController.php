@@ -18,12 +18,6 @@ class CoordinadorController extends BaseController {
         parent::__construct();
     }
 
-    public function index() {
-        echo "<br>CONTROLLER> CoordinadorController";
-        echo "<br>ACTION> index";
-        $this->redirectTo("coordinador/view");
-    }
-
     public function view() {
         // Llamamos al modelo de Coordinador
         $coordinadorObj = new CoordinadorModel();
@@ -65,6 +59,7 @@ class CoordinadorController extends BaseController {
             
             // Se llama al método que guarda en la base de datos
             $coordinadorObj->saveCoordinador($idCentro, $idUsuario);
+            // print_r($coordinadorObj);
             $this->redirectTo("coordinador/view");
         } else {
             echo "No se capturaron todos los datos del coordinador";
@@ -115,7 +110,21 @@ class CoordinadorController extends BaseController {
 
     public function deleteCoordinador($id) {
         $coordinadorObj = new CoordinadorModel();
-        $coordinadorObj->deleteCoordinador($id);
-        $this->redirectTo("coordinador/view");
+        $coordinador = $coordinadorObj->getCoordinador($id);
+        $data = [
+            "title" => "Eliminar Coordinador",
+            "coordinador" => $coordinador,
+        ];
+        $this->render('coordinador/deleteCoordinador.php', $data);
     }
+    public function removeCoordinador()
+    {
+        if (isset($_POST['txtId'])) {
+            $id = $_POST['txtId'] ?? null;
+            $usuarioObj = new CoordinadorModel();
+            $usuarioObj->removeCoordinador($id);
+            $this->redirectTo("coordinador/view");
+        }
+    }
+
 }
