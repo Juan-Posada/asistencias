@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <?php echo $title ?> </title>
+    <title><?php echo $title ?></title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style_admin_layout.css">
     <link rel="shortcut icon" href="/img/logo-sena.png" type="image/x-icon">
-    <!-- Añadiendo Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <div class="container">
         <aside class="sidebar">
@@ -23,14 +19,14 @@
                 </div>
                 <nav class="menu">
                     <ul>
-                    <li><a href="/usuario/home"><i class="fas fa-home"></i><span class="span">INICIO</span></a></li>
-                    <li><a href="/regional/view"><i class="fas fa-globe"></i><span class="span">REGIONAL</span></a></li>
-                    <li><a href="/rol/view"><i class="fas fa-user-secret"></i><span class="span">ROL</span></a></li>
-                    <li><a href="/usuario/view"><i class="fas fa-user"></i><span class="span">USUARIO</span></a></li>
-                    <li><a href="/centro/view"><i class="fas fa-home"></i><span class="span">CENTRO</span></a></li>
-                    <li><a href="/asistencia/view"><i class="fas fa-user"></i><span class="span">ASISTENCIA</span></a></li>
-                    <li><a href="/horario/view"><i class="fas fa-user"></i><span class="span">HORARIO</span></a></li>
-                    <li><a href="/programa/view"><i class="fas fa-book-open"></i><span class="span">PROGRAMA</span></a></li>
+                        <li><a href="/usuario/home"><i class="fas fa-home"></i><span class="span">INICIO</span></a></li>
+                        <li><a href="/regional/view"><i class="fas fa-globe"></i><span class="span">REGIONAL</span></a></li>
+                        <li><a href="/rol/view"><i class="fas fa-user-secret"></i><span class="span">ROL</span></a></li>
+                        <li><a href="/usuario/view"><i class="fas fa-user"></i><span class="span">USUARIO</span></a></li>
+                        <li><a href="/centro/view"><i class="fas fa-home"></i><span class="span">CENTRO</span></a></li>
+                        <li><a href="/asistencia/view"><i class="fas fa-user"></i><span class="span">ASISTENCIA</span></a></li>
+                        <li><a href="/horario/view"><i class="fas fa-user"></i><span class="span">HORARIO</span></a></li>
+                        <li><a href="/programa/view"><i class="fas fa-book-open"></i><span class="span">PROGRAMA</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,7 +39,7 @@
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="Buscar..." id="search-input">
                     </div>
-                    <h1> <?php echo $title ?> </h1>
+                    <h1><?php echo $title ?></h1>
                     <div class="header-icons">
                         <a href="#" class="icon-link"><i class="fas fa-user-circle"></i></a>
                         <a href="#" class="icon-link"><i class="fas fa-bell"></i></a>
@@ -65,7 +61,6 @@
             </span>
         </div>
     </footer>
-
     <!-- Script para cambiar entre tema oscuro y claro -->
     <script>
         document.getElementById('theme-toggle').addEventListener('click', function() {
@@ -87,7 +82,6 @@
         menuToggle.addEventListener('click', function() {
             sidebar.classList.toggle('sidebar-hidden');
         });
-    </script>
+    </script>
 </body>
-
 </html>
