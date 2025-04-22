@@ -10,7 +10,7 @@
             echo "
                 <div class='record-one'>
                     <span>ID: $aprendiz->id</span>
-                    <span>Nombre: $aprendiz->nombre</span>
+                    <span>Nombre: $aprendiz->idUsuario</span>
                 </div>
             ";      
         }

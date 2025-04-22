@@ -16,11 +16,6 @@ class UsuarioController extends BaseController
         parent::__construct();
     }
 
-    public function home()
-    {
-        $this->render('index.php', ["title" => "Bienvenida"]);
-    }
-
     public function view()
     {
         $usuarioObj = new UsuarioModel();

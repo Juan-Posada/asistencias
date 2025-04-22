@@ -447,37 +447,72 @@ return [
     ],
     // Rutas para tabla aprendiz
     '/aprendiz/view' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'view'
     ],
     '/aprendiz/new' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'new'     // Nombre de la funcion 
     ],
     '/aprendiz/create' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'create'
     ],
     '/aprendiz/view/(\d+)' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'viewOne'
     ],
     '/aprendiz/edit/(\d+)' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'edit'
     ],
     '/aprendiz/update' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'update'
     ],
     '/aprendiz/delete/(\d+)' => [
-        'controller' => 'App\Controllers\AprenizController',
+        'controller' => 'App\Controllers\AprendizController',
         'action' => 'delete'
     ],
     "/aprendiz/remove" => [
-        "controller" => "App\Controllers\AprenizController",
+        "controller" => "App\Controllers\AprendizController",
         "action" => "remove"
     ],
+
+    // Rutas para Instructor
+    "/instructor/view" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "view"
+    ],
+    "/instructor/new" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "newInstructor"
+    ],
+    "/instructor/create" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "createInstructor"
+    ],
+    "/instructor/view/(\d+)" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "viewInstructor"
+    ],
+    "/instructor/edit/(\d+)" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "editInstructor"
+    ],
+    "/instructor/update" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "updateInstructor"
+    ],
+    "/instructor/delete/(\d+)" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "deleteInstructor"
+    ],
+    "/instructor/remove" => [
+        "controller" => "App\Controllers\InstructorController",
+        "action" => "remove"
+    ],
+    
     '/login/init' => [
         "controller" => 'App\Controllers\LoginController',
         "action" => 'initLogin'

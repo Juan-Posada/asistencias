@@ -15,6 +15,7 @@ require_once '../app/controllers/CoordinadorController.php';
 require_once '../app/controllers/HorarioController.php';
 require_once '../app/controllers/CompetenciaController.php';
 require_once '../app/controllers/AprendizController.php';
+require_once '../app/controllers/InstructorController.php';
 
 
 $url = $_SERVER['REQUEST_URI']; //Lo que se ingresa en la URL
